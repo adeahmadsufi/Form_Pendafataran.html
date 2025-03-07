@@ -1,0 +1,135 @@
+<DOCTYPE! html>
+
+<html>
+<head>
+	<title>Form Pendaftaran</title>
+	<meta name="author" content="Ade Ahmad Sufi">
+</head>
+<body>
+<h1><b>FORM PENDAFTARAN</b></h1>
+	<form action="" method="GET">
+	<table>
+	<tr><td><fieldset>
+	<legend><b>Data Pribadi</b></legend>
+	<table>
+		<tr>
+			<td><label>Nama Lengkap</label></td>
+			<td valign="middle">:</td>
+			<td><input type="text" name="nama" placeholder="Nama Lengkap" required autofocus></td>
+		</tr>
+		<tr>
+			<td><label>eMail</label></td>
+			<td valign="middle">:</td>
+			<td><input type="email" name="email" required></td>
+		</tr>
+		<tr>
+			<td><label>Nomor Telepon</label></td>
+			<td valign="middle">:</td>
+			<td><input type="number" name="telepon" required autofocus></td>
+		</tr>
+		<tr>
+			<td><label>Alamat</label></td>
+			<td valign="middle">:</td>
+			<td><textarea name="alamat" rows="5" cols="21"></textarea></td>
+		</tr>
+		<tr>
+			<td><label>Tanggal Lahir</label></td>
+			<td valign="middle">:</td>
+			<td><input type="date" name="tanggal lahir" required></td>
+		</tr>
+		<tr>
+			<td><label>Jenis Kelamin</label></td>
+			<td valign="middle">:</td>
+			<td><input type="radio" name="Gender" value="L" required>Laki-laki
+			<input type="radio" name="Gender" value="P" required>Perempuan</td>
+		</tr>
+		<tr>
+			<td><label>Agama</label></td>
+			<td valign="middle">:</td>
+			<td>
+				<select name="Agama" required>
+					<option>Agama</option>
+					<option value="Islam">Islam</option>
+					<option value="Protestan">Kristen Protestan</option>
+					<option value="Katolik">Kristen Katolik</option>
+					<option value="Hindu">Hindu</option>
+					<option value="Buddha">Buddha</option>
+					<option value="Konghucu">Konghucu</option>
+					<option value="Yahudi">Yahudi</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Pendidikan Terakhir</label></td>
+			<td valign="middle">:</td>
+			<td><input type="radio" name="Pendidikan" value="SMA" required>SMA
+			<input type="radio" name="Pendidikan" value="D#" required>D3
+			<input type="radio" name="Pendidikan" value="D#" required>S1</td>
+		</tr>
+		<tr>
+			<td><label>Foto</label></td>
+			<td valign="middle">:</td>
+			<td><input type="file" name="foto" accept="image/*" required></td>
+		</tr>
+		<tr>
+			<td><label>CV</label></td>
+			<td valign="middle">:</td>
+			<td><input type="file" name="CV" accept=".docx" required></td>
+		</tr>
+	</table>
+	</fieldset></td>
+	
+	<td><fieldset>
+	<legend><b>Data Orang Tua</b></legend>
+	<table>
+	<tr>
+		<td><label>Nama Ayah</label></td>
+		<td valign="middle">:</td>
+		<td><input type="text" name="nama_ayah" required></td>
+	</tr>
+	<tr>
+		<td><label>Pekerjaan Ayah</label></td>
+		<td valign="middle">:</td>
+		<td><input type="text" name="pekerjaan_ayah" required></td>
+	</tr>
+	<tr>
+		<td><label>Alamat Ayah</label></td>
+		<td valign="middle">:</td>
+		<td><textarea name="alamat_ayah" rows="5" cols="21"></textarea></td>
+	</tr>
+	<tr>
+		<td><label>Nomor Telepon Ayah</label></td>
+		<td valign="middle">:</td>
+		<td><input type="text" name="no_tlp_ayah" required></td>
+	</tr>
+	<tr>
+		<td><label>Nama Ibu</label></td>
+		<td valign="middle">:</td>
+		<td><input type="text" name="nama_ibu" required></td>
+	</tr>
+	<tr>
+		<td><label>Pekerjaan Ibu</label></td>
+		<td valign="middle">:</td>
+		<td><input type="text" name="pekerjaan_ibu" required></td>
+	</tr>
+	<tr>
+		<td><label>Alamat Ibu</label></td>
+		<td valign="middle">:</td>
+		<td><textarea name="alamat_ibu" rows="5" cols="21"></textarea></td>
+	</tr>
+	<tr>
+		<td><label>Nomor Telepon Ibu</label></td>
+		<td valign="middle">:</td>
+		<td><input type="text" name="no_tlp_ibu" required></td>
+	</tr>
+	<tr><td colspan="2">
+	<input type="submit">
+	<input type="Reset">
+	</td>
+	</tr>
+	</table>
+	</fieldset></td></tr>	
+	</table>
+	</form>
+</body>
+</html>
