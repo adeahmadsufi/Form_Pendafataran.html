@@ -4,14 +4,88 @@
 <head>
 	<title>Form Pendaftaran</title>
 	<meta name="author" content="Ade Ahmad Sufi">
+	<style>
+		body{
+			background-color: #000f7f;
+			margin:0;
+			padding:0;
+		}
+		h2{
+			color:#00ffff;
+			text-align:center;
+		}
+		legend{
+			color:#00ffff;
+			}
+		label{
+			color:white;
+			font-family:Arial;
+		}
+		[valign="middle"]{
+			color:white;
+			font-family:Arial;
+		}
+		input[type="text"],[type="email"],[type="date"],[type="number"]{
+			border-radius:15px;
+			padding:10px;
+			width:90%;
+		}
+		textarea{
+			border-radius:15px;
+			padding:10px;
+			width:90%;
+		}
+		select{
+			border-radius:15px;
+			padding:10px;
+			width:90%;
+		}
+		fieldset{
+			border-radius:15px;
+		}
+		#button{
+			border-radius:15px;
+			padding:10px;
+			color:black;
+			font-weight:bold;
+			font-family:Arial;
+		}
+		#button:hover{
+			background-color:#00ffff;
+			font-weight:bold;
+			padding:10px;
+		}
+		header{
+			background-color:#000fff;
+			color:#fff;
+			text-align:center;
+			width:100%;
+			margin:0px;
+			height:80px;
+			font-family:Lucida Console;
+			position:fixed;
+			top=0px;
+		}
+		footer{
+			background-color:#000fff;
+			color:#fff;
+			text-align:center;
+			width:100%;
+			margin:0px;
+			font-family:Lucida Console;
+			position:fixed;
+			bottom:0px;
+		}
+	</style>
 </head>
 <body>
-<h1><b>FORM PENDAFTARAN</b></h1>
+<header><h1>My Landing Page</h1></header>
+<h2><b>FORM PENDAFTARAN</b></h2>
 	<form action="" method="GET">
-	<table>
+	<table width="100%">
 	<tr><td><fieldset>
-	<legend><b>Data Pribadi</b></legend>
-	<table>
+	<legend><b><i>Data Pribadi<i></b></legend>
+	<table width="100%">
 		<tr>
 			<td><label>Nama Lengkap</label></td>
 			<td valign="middle">:</td>
@@ -69,18 +143,18 @@
 		<tr>
 			<td><label>Foto</label></td>
 			<td valign="middle">:</td>
-			<td><input type="file" name="foto" accept="image/*" required></td>
+			<td><input id="file" type="file" name="foto" accept="image/*" required></td>
 		</tr>
 		<tr>
 			<td><label>CV</label></td>
 			<td valign="middle">:</td>
-			<td><input type="file" name="CV" accept=".docx" required></td>
+			<td><input id="file" type="file" name="CV" accept=".docx" required></td>
 		</tr>
 	</table>
 	</fieldset></td>
 	
 	<td><fieldset>
-	<legend><b>Data Orang Tua</b></legend>
+	<legend><b><i>Data Orang Tua</i></b></legend>
 	<table>
 	<tr>
 		<td><label>Nama Ayah</label></td>
@@ -123,13 +197,14 @@
 		<td><input type="text" name="no_tlp_ibu" required></td>
 	</tr>
 	<tr><td colspan="2">
-	<input type="submit">
-	<input type="Reset">
+	<input id="button" type="submit">
+	<input id="button" type="Reset">
 	</td>
 	</tr>
 	</table>
 	</fieldset></td></tr>	
 	</table>
 	</form>
+	<footer>&copy; 2025 My Website. All Rights Reserved</footer>
 </body>
 </html>
